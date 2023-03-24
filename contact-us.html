@@ -33,6 +33,26 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+.w3-button w3-display-topright{
+	float: right;
+	background-color: ;
+}
+.w3-modal-content {
+	background-color: ;
+	border-radius: 15px;
+	width: 80%;
+	margin: auto;
+	border: 3px solid  #e1c44a;
+
+
+}
+.w3-modal{
+
+}
+
+.okayB{
+	border-radius: 10px;
+}
 </style>
 	<link rel='stylesheet' id='wp-block-library-css' href='https://www.oms.africa/wp-includes/css/dist/block-library/style.min.css?ver=6.1' type='text/css' media='all' />
 <link rel='stylesheet' id='classic-theme-styles-css' href='https://www.oms.africa/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
@@ -68,11 +88,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	</head>
 	    <script>
         const myTimeout = setTimeout(AlertIt, 3000);
+		/*
         function AlertIt() {
             var answer = confirm ("Accept Privacy Policy, Terms & Conditions,\nPlease click on OK to continue.")
             if (answer)
             window.location="https://luckym23.github.io/oms.africa/popia.html";
             }
+			*/
         
     </script>
 
@@ -106,14 +128,17 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		data-section="header_menu_primary"
 		data-item-id="primary-menu">
 	<div class="nv-nav-wrap">
-	<div role="navigation" class="style-plain nav-menu-primary"
-			aria-label="Primary Menu">
+    <div role="navigation" class="style-plain nav-menu-primary"
+        aria-label="Primary Menu">
 
-		<ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul"><li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-396"><a href="Homed2.html">Home</a></li>
-<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="about-us.html">About Us</a></li>
-<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="our-services.html">Our Services</a></li>
-<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item menu-item-31"><a href="contact-us.html" aria-current="page">Contact Us</a></li>
-</ul>	</div>
+      <ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul"><li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-396"><a href="Homed2.html">Home</a></li>
+  <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="about-us.html">About Us</a></li>
+  <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="our-services.html">Our Services</a></li>
+  <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item menu-item-31"><a href="contact-us.html" aria-current="page">Contact Us</a></li>
+  </ul>	
+
+
+  </div>
 </div>
 
 	</div>
@@ -221,7 +246,21 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <p>Owethu Managed services&nbsp; is committed to protecting your information. Your information will be used in accordance with the applicable data privacy law, our internal policies and our privacy policy. Your information may be stored and processed by Owethu Managed Services, in the processing of your information, you can rest assured that information will be handled with the utmost care and respect.</p>
 </div>		</div>
 			</div>
+
 </div>
+<div id="id01" class="w3-modal" style="background-image: ('C:\Users\omsge\OneDrive\Desktop\OMS Website\About-Us-Image-930-x-620.png'); width: 100%">
+	<div class="w3-modal-content">
+	  <div class="w3-container">
+		<!--<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>-->
+		<form id="requestForm" name="requestForm" action="recruitmentregistration.php" method="Post">
+			<table>
+				<tr  width="100%"><td><img src="C:\Users\omsge\OneDrive\Desktop\OMS Website\cropped-Favicon-1-32x32.png"> &nbsp More Information About our Privacy Policy &nbsp <a href="https://luckym23.github.io/oms.africa/popia.html"><input type="button" value="Okay" Style="border-radius: 10px;" class="okayB"/></a> &nbsp &nbsp <input type="button" value="Cancel" Style="border-radius: 10px;" onclick="document.getElementById('id01').style.display='none'" class="CancelB"/></td><td style="text-align: left"></td></tr>
+				<tr><td>Please direct back to <strong><a href="#">Contact Information</a></strong> section get in touch with specialist that can assist your further</td></tr>
+			</table>      
+	  </form>
+	  </div>
+	</div>
+  </div>
 
 </main><!--/.neve-main-->
 
@@ -264,6 +303,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 	</div>
 </div>
+
 
 <div class="footer--row footer-main layout-full-contained"
 	id="cb-row--footer-main"
@@ -342,25 +382,29 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
   
-document.getElementById("wpforms-submit-741").addEventListener("click", sendEmail);
+  document.getElementById("wpforms-submit-741").addEventListener("click", sendEmail);
 
 
 
-function whistleBlow() {
-    //setRequired();
-if(document.getElementById("wpforms-741-field_2_5").checked === true){
+  function whistleBlow() {
+      //setRequired();
+    if(document.getElementById("wpforms-741-field_2_5").checked === true){
+        document.getElementById("wpforms-741-field_6-container").style.display = "none";
+        document.getElementById("wpforms-741-field_7-last").required = false;
+        document.getElementById("wpforms-741-field_7").required = false; 
+        document.getElementById("wpforms-741-field_5").required = false;
+        document.getElementById("wpforms-741-field_4").required = false;
+        document.getElementById("wpforms-741-field_6").required = false;
+        document.getElementById("wpforms-741-field_2").required = false;
 
-    document.getElementById("wpforms-741-field_6-container").style.display = "none";
-    document.getElementById("wpforms-741-field_7-last").required = false;
-    document.getElementById("wpforms-741-field_7").required = false; 
-    document.getElementById("wpforms-741-field_5").required = false;
-    document.getElementById("wpforms-741-field_4").required = false;
-    document.getElementById("wpforms-741-field_6").required = false;
-    document.getElementById("wpforms-741-field_2").required = false;
-}
-
+        var spn = document.getElementsByClassName("wpforms-required-label");
+      
+        for(var i = 0; i < spn.length ; i++) {
+          var picSpan = spn.item(i).style.display = "none";
+        }
+    } 
         
-}
+  }
 
 function sendEmail() {
     if(document.getElementById("wpforms-741-field_2_5").checked === true) {
@@ -401,7 +445,18 @@ function resortToDefault() {
     document.getElementById("wpforms-741-field_6").required = true;
     document.getElementById("wpforms-741-field_3").required = true;
     document.getElementById("wpforms-741-field_2").required = true;
+
+    var spn = document.getElementsByClassName("wpforms-required-label");
+   
+    let picSpan;
+    alert(picSpan);
+
+      for(var i = 0; i < spn.length ; i++) {
+        picSpan = spn.item(i).style.display = 'block';
+      }
   }
+  alert(picSpan);
+
 
 function setUnRequired() {
     
